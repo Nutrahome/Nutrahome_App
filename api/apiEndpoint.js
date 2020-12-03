@@ -1,6 +1,6 @@
 
 export default {
-    api: (path) => `https://itchy-bear-91.loca.lt/${path}`,
+    api: (path) => `https://great-baboon-12.loca.lt/${path}`,
     users: () => "/api/users",
     dietitians: () => `/api/dietitians`,
     booths: () => `/api/booths`,
