@@ -14,7 +14,7 @@ import styles, {
   CELL_SIZE,
   DEFAULT_CELL_BG_COLOR,
   NOT_EMPTY_CELL_BG_COLOR,
-} from './styles';
+} from './AuthStyles';
 
 const {Value, Text: AnimatedText} = Animated;
 const CELL_COUNT = 6;

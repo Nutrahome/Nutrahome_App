@@ -3,9 +3,9 @@ import React from 'react';
 import { Icon } from 'react-native-elements'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Home from './Home'
-import Nutritionist from './Nutritionist'
-import Meals from './Meals'
+import HomeNav from './HomeNav'
+import Chat from './Chat'
+import Diary from './Diary'
 import Cart from './Cart'
 import UserProfile from './UserProfile'
 
@@ -18,7 +18,7 @@ const MainApp = () => {
         style: { height: 70 }, tabStyle: { marginTop:8, height: 50, backgroundColor: '#ffffff' },
     }}>
         
-        <Tab.Screen name="Home" component={Home} 
+        <Tab.Screen name="HomeNav" component={HomeNav} 
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
@@ -27,7 +27,7 @@ const MainApp = () => {
         }}
         />
 
-        <Tab.Screen name="Nutritionist" component={Nutritionist} 
+        <Tab.Screen name="Chat" component={Chat} 
         options={{
           tabBarLabel: 'Messages',
           tabBarIcon: ({ color, size }) => (
@@ -36,7 +36,7 @@ const MainApp = () => {
         }}
         />
 
-        <Tab.Screen name="Meals" component={Meals} 
+        <Tab.Screen name="Diary" component={Diary} 
         options={{
           tabBarLabel: 'Diary',
           tabBarIcon: ({ color, size }) => (
@@ -45,7 +45,7 @@ const MainApp = () => {
         }}
         />
 
-        <Tab.Screen name="Chat" component={Cart} 
+        <Tab.Screen name="Cart" component={Cart} 
         options={{
           tabBarLabel: 'Cart',
           tabBarIcon: ({ color, size }) => (

@@ -4,11 +4,11 @@ import { Icon, Avatar } from 'react-native-elements'
 import { FlatGrid } from 'react-native-super-grid';
 import url from './../api/apiEndpoint'
 
-function Meals({ navigation }) {
+function Dietitian({ navigation }) {
 
   const [items, setItems] = useState([]);
   useEffect(() => {
-    fetch(url.api(url.meals()), {method:'GET'})
+    fetch(url.api(url.dietitians()), {method:'GET'})
       .then((res) => res.json())
       .then((res) => {
         setItems(res.result)
@@ -30,13 +30,13 @@ function Meals({ navigation }) {
         </View>
         <View style={{ marginTop:15, marginLeft:10 }}>
           <Text style={{ fontSize:20, fontFamily:'Comfortaa-Bold' }}>
-            Choose your mealbox!
+            Meet our dietitians!
           </Text>
           <Text style={{ fontFamily:'Comfortaa' }}>
-            Healthy meals everyday!
+            Best partner, best result
           </Text>
         </View>
-        <View style={{width:10}}/>
+        <View style={{width:40}}/>
         <View style={{marginTop:10}}>
           <Icon raised
           name='notifications' type='ionicon' color='#C0C0C0' size={25}/>
@@ -57,9 +57,9 @@ function Meals({ navigation }) {
         spacing={10}
         renderItem={({ item }) => (
           <View style={[styles.itemContainer, { backgroundColor: '#fff' }]}>
-            <Avatar rounded size='large' source={{uri: item.mphoto}}/>
-            <Text style={styles.itemName}>{item.mname}</Text>
-            <Text style={styles.itemCode}>Rp {item.mprice}</Text>
+            <Avatar rounded size='large' source={{uri: item.dphoto}}/>
+            <Text style={styles.itemName}>{item.dfname}, {item.dtitle}</Text>
+            <Text style={styles.itemCode}>{item.dpractice}</Text>
           </View>
         )}
       />
@@ -99,4 +99,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Meals
+export default Dietitian

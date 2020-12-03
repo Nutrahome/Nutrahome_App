@@ -1,10 +1,10 @@
 import React from 'react';
 import { Image, View, Text } from 'react-native';
 
-function Cart({ navigation }) {
+function Diary({ navigation }) {
     return (
       <View style={{ backgroundColor:'#ffd500', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={{ fontSize:33, fontFamily:'Comfortaa-Bold' }}>Cart Screen</Text>
+        <Text style={{ fontSize:33, fontFamily:'Comfortaa-Bold' }}>Diary Screen</Text>
         <Image
             source={{uri:'https://freepngimg.com/thumb/coming_soon/4-2-coming-soon-png.png'}}
             style={{width:300, height:300, resizeMode: "contain",}}
@@ -13,4 +13,4 @@ function Cart({ navigation }) {
     );
 }
 
-export default Cart
+export default Diary
