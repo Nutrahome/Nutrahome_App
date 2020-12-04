@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { ActivityIndicator, StyleSheet, View, Text, ImageBackground, Image } from 'react-native';
+import { ActivityIndicator, TouchableOpacity, StyleSheet, View, Text, ImageBackground, Image } from 'react-native';
 import { Icon, Avatar } from 'react-native-elements'
 import { FlatGrid } from 'react-native-super-grid';
 import url from './../api/apiEndpoint'
@@ -56,11 +56,12 @@ function Meals({ navigation }) {
         // fixed
         spacing={10}
         renderItem={({ item }) => (
-          <View style={[styles.itemContainer, { backgroundColor: '#fff' }]}>
+          <TouchableOpacity onPress={() => navigation.navigate('Dietitians')} 
+          style={[styles.itemContainer, { backgroundColor: '#fff' }]}>
             <Avatar rounded size='large' source={{uri: item.mphoto}}/>
             <Text style={styles.itemName}>{item.mname}</Text>
             <Text style={styles.itemCode}>Rp {item.mprice}</Text>
-          </View>
+          </TouchableOpacity>
         )}
       />
       }

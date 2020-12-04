@@ -61,7 +61,7 @@ function Pricing({ navigation }) {
               <Text style={styles.itemFacility}>{item.facility[2]}</Text>
               <Button 
                 buttonStyle={{ marginTop:20, marginBottom:10, backgroundColor:'#ea0505', marginLeft:10, width:320, height:50, borderRadius:20 }}
-                title="Pay"
+                title="Purchase"
                 onPress={() => navigation.navigate('Payment')}
                 icon={
                   <Icon style={{marginRight:10}} color='white' name='card-outline' type='ionicon' size={24}/>

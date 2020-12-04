@@ -13,12 +13,16 @@ function UserProfile({ navigation }) {
         flexDirection: 'row'}}>
           {/* <Image source={require('./../assets/nutrahome_text.png')} 
           style={{marginTop:15, marginLeft:10, resizeMode:'stretch', width:210, height:54}}/> */}
-          <View style={{ marginTop:15, marginLeft:33 }}>
+          <View style={{marginTop:10, marginLeft:10}}>
+            <Icon raised onPress={() => navigation.goBack()}
+            name='arrow-back-outline' type='ionicon' size={25}/>
+          </View>
+          <View style={{ marginTop:15, marginLeft:10 }}>
             <Text style={{ fontSize:33, fontFamily:'Comfortaa-Bold' }}>
               Profile
             </Text>
           </View>
-          <View style={{width:180}}/>
+          <View style={{width:130}}/>
           <View style={{marginTop:10}}>
             <Icon raised
             name='notifications' type='ionicon' color='#C0C0C0' size={25}/>

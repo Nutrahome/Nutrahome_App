@@ -80,7 +80,8 @@ function Payment({ navigation }) {
             <View>
               {
                 atm.map((val, i) => (
-                  <ListItem key={i} bottomDivider>
+                  <ListItem onPress={() => navigation.navigate('PaymentConfirm')} 
+                  key={i} bottomDivider>
                     <Image style={{width:30, height:30, resizeMode:'contain'}} source={{uri: val.pmphoto}} />
                     <ListItem.Content>
                       <ListItem.Title>{val.pmname}</ListItem.Title>
@@ -104,7 +105,8 @@ function Payment({ navigation }) {
             <View>
               {
                 inet.map((val, i) => (
-                  <ListItem key={i} bottomDivider>
+                  <ListItem onPress={() => navigation.navigate('PaymentConfirm')}
+                  key={i} bottomDivider>
                     <Image style={{width:30, height:30, resizeMode:'contain'}} source={{uri: val.pmphoto}} />
                     <ListItem.Content>
                       <ListItem.Title>{val.pmname}</ListItem.Title>
@@ -128,7 +130,8 @@ function Payment({ navigation }) {
             <View>
               {
                 emoney.map((val, i) => (
-                  <ListItem key={i} bottomDivider>
+                  <ListItem onPress={() => navigation.navigate('PaymentConfirm')}
+                  key={i} bottomDivider>
                     <Image style={{width:30, height:30, resizeMode:'contain'}} source={{uri: val.pmphoto}} />
                     <ListItem.Content>
                       <ListItem.Title>{val.pmname}</ListItem.Title>

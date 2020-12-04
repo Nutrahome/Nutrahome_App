@@ -1,6 +1,6 @@
 
 export default {
-    api: (path) => `https://great-baboon-12.loca.lt/${path}`,
+    api: (path) => `https://young-grasshopper-38.loca.lt/${path}`,
     users: () => "/api/users",
     dietitians: () => `/api/dietitians`,
     booths: () => `/api/booths`,

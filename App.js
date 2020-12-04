@@ -12,7 +12,7 @@ import MainApp from './components/AppMainNav'
 
 const App = () => {
 
-  let isLogin = true
+  let isLogin = false
 
   return (
     <NavigationContainer>
