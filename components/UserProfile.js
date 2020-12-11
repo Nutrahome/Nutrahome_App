@@ -77,6 +77,11 @@ function UserProfile({ navigation }) {
             Personal Data
           </Text>
 
+          {/* personal data */}
+          <Text style={{marginVertical:10, fontSize:20, fontFamily:'Comfortaa-Bold'}}>
+            Personal Assessment
+          </Text>
+
           {/* user account */}
           <Text style={{marginVertical:10, fontSize:20, fontFamily:'Comfortaa-Bold'}}>
             User Account

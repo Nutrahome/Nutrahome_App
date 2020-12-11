@@ -89,28 +89,32 @@ function HomeScreen({ navigation }) {
         {/* 1st row: column menu */}
         <View style={{width: '90%', height: 80, 
         borderRadius:30, position:'absolute', top:310, flexDirection:'row', justifyContent:'center' }}>
-          <View style={{alignItems:'center'}}>
-            <Icon reverse name='newspaper-outline' type='ionicon' color='#ffd500' size={30}
-            iconStyle={{color:'#ea0505'}}
-            onPress={() => navigation.navigate('News')}/>
+          <View style={{alignItems:'center', paddingHorizontal:5}}>
+            <TouchableOpacity onPress={() => navigation.navigate('News')}>
+              <Icon reverse name='newspaper-outline' type='ionicon' color='#ffd500' size={30}
+              iconStyle={{color:'#ea0505'}}/>
+            </TouchableOpacity>
             <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>News</Text>
           </View>
-          <View style={{alignItems:'center'}}>
-            <Icon reverse name='people-outline' type='ionicon' color='#ffd500' size={30}
-            iconStyle={{color:'#ea0505'}}
-            onPress={() => navigation.navigate('Dietitians')}/>
+          <View style={{alignItems:'center', paddingHorizontal:5}}>
+            <TouchableOpacity onPress={() => navigation.navigate('Dietitians')}>
+              <Icon reverse name='people-outline' type='ionicon' color='#ffd500' size={30}
+              iconStyle={{color:'#ea0505'}}/>
+            </TouchableOpacity>
             <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>Consult</Text>
           </View>
-          <View style={{alignItems:'center'}}>
-            <Icon reverse name='fast-food-outline' type='ionicon' color='#ffd500' size={30}
-            iconStyle={{color:'#ea0505'}}
-            onPress={() => navigation.navigate('Meals')}/>
+          <View style={{alignItems:'center', paddingHorizontal:5}}>
+            <TouchableOpacity onPress={() => navigation.navigate('Meals')}>
+              <Icon reverse name='fast-food-outline' type='ionicon' color='#ffd500' size={30}
+              iconStyle={{color:'#ea0505'}}/>
+            </TouchableOpacity>
             <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>Meals</Text>
           </View>
-          <View style={{alignItems:'center'}}>
-            <Icon reverse name='store' type='material' color='#ffd500' size={30}
-            iconStyle={{color:'#ea0505'}}
-            onPress={() => navigation.navigate('Booths')}/>
+          <View style={{alignItems:'center', paddingHorizontal:5}}>
+            <TouchableOpacity onPress={() => navigation.navigate('Booths')}>
+              <Icon reverse name='store' type='material' color='#ffd500' size={30}
+              iconStyle={{color:'#ea0505'}}/>
+            </TouchableOpacity>
             <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>Booths</Text>
           </View>
         </View>
@@ -118,29 +122,33 @@ function HomeScreen({ navigation }) {
         {/* 2nd row: column menu */}
         <View style={{width: '90%', height: 80, 
         borderRadius:30, position:'absolute', top:425, flexDirection:'row', justifyContent:'center' }}>
-          <View style={{alignItems:'center'}}>
+          <View style={{alignItems:'center', paddingHorizontal:5}}>
+            <TouchableOpacity onPress={() => navigation.navigate('Diary')}>
             <Icon reverse name='repo' type='octicon' color='#ffd500' size={30}
-            iconStyle={{color:'#ea0505'}}
-            onPress={() => navigation.navigate('Diary')}/>
+            iconStyle={{color:'#ea0505'}}/>
+            </TouchableOpacity>
             <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>Diary</Text>
           </View>
-          <View style={{alignItems:'center'}}>
+          <View style={{alignItems:'center', paddingHorizontal:5}}>
+            <TouchableOpacity onPress={() => navigation.navigate('Pricing')}>
             <Icon reverse name='cash-outline' type='ionicon' color='#ffd500' size={30}
-            iconStyle={{color:'#ea0505'}}
-            onPress={() => navigation.navigate('Pricing')}/>
+            iconStyle={{color:'#ea0505'}}/>
+            </TouchableOpacity>
             <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>Pricing</Text>
           </View>
-          <View style={{alignItems:'center'}}>
-            <Icon reverse name='card-outline' type='ionicon' color='#ffd500' size={30}
-            iconStyle={{color:'#ea0505'}}
-            onPress={() => navigation.navigate('Payment')}/>
+          <View style={{alignItems:'center', paddingHorizontal:5}}>
+            <TouchableOpacity onPress={() => navigation.navigate('Payment')}>
+              <Icon reverse name='card-outline' type='ionicon' color='#ffd500' size={30}
+              iconStyle={{color:'#ea0505'}}/>
+            </TouchableOpacity>
             <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>Payment</Text>
           </View>
-          <View style={{alignItems:'center'}}>
-            <Icon reverse name='information-outline' type='ionicon' color='#ffd500' size={30}
-            iconStyle={{color:'#ea0505'}}
-            onPress={() => navigation.navigate('About')}/>
-            <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>About</Text>
+          <View style={{alignItems:'center', paddingHorizontal:5}}>
+            <TouchableOpacity onPress={() => navigation.navigate('Assessment')}>
+              <Icon reverse name='body-outline' type='ionicon' color='#ffd500' size={30}
+              iconStyle={{color:'#ea0505'}}/>
+            </TouchableOpacity>
+            <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>Assessment</Text>
           </View>
         </View>
         

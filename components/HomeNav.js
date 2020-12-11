@@ -12,7 +12,7 @@ import Diary from './Diary'
 import Payment from './Payment'
 import PaymentConfirm from './PaymentConfirm'
 import Pricing from './Pricing'
-import About from './About'
+import Assessment from './Assessment'
 import UserProfile from './UserProfile'
 
 function HomeScreen({ navigation }) {
@@ -30,7 +30,7 @@ function HomeScreen({ navigation }) {
         <Stack.Screen name="Pricing" component={Pricing} />
         <Stack.Screen name="Payment" component={Payment} />
         <Stack.Screen name="PaymentConfirm" component={PaymentConfirm} />
-        <Stack.Screen name="About" component={About} />
+        <Stack.Screen name="Assessment" component={Assessment} />
       </Stack.Navigator>
     );
 }

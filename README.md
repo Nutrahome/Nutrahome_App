@@ -39,6 +39,12 @@
         $ npm i react-native-confirmation-code-field
         ```
 
+    - _React Native Calendar_
+
+        ```
+        $ npm i react-native-calendars
+        ```
+
 - __Run metro JS bundler (like webpack in web dev)__:
 
     ```
