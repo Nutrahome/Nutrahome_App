@@ -30,6 +30,7 @@ const MainApp = () => {
         <Tab.Screen name="Chat" component={Chat} 
         options={{
           tabBarLabel: 'Messages',
+          tabBarVisible: false,
           tabBarIcon: ({ color, size }) => (
             <Icon name='chatbox-ellipses-outline' type='ionicon' color={color} size={30}/>
           ),

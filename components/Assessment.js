@@ -517,7 +517,7 @@ function Assessment({ navigation }) {
               <Button 
                 buttonStyle={{ marginTop:10, marginBottom:10, backgroundColor:'#ea0505', marginLeft:10, width:320, height:50, borderRadius:20 }}
                 title="Finish Assessment"
-                onPress={() => goToPage(pageIndex + 1)}
+                onPress={() => navigation.navigate('Home')}
                 icon={
                   <Icon style={{marginRight:10}} color='white' name='check-circle' type='octicons' size={24}/>
                 }
