@@ -1,13 +1,20 @@
 import React, {useState, useEffect} from 'react';
-import { View, Text, Image, ScrollView, ActivityIndicator } from 'react-native';
+import { View, Text, Image, ScrollView, ActivityIndicator, StyleSheet } from 'react-native';
 import { Icon, ListItem } from 'react-native-elements'
 import url from './../api/apiEndpoint'
 
-function Payment({ navigation }) {
+function Payment({ route, navigation }) {
 
+  const {packagePlan, dietitian} = route.params;
   const [atm, setAtm] = useState([]);
   const [inet, setInet] = useState([]);
   const [emoney, setEmoney] = useState([]);
+
+  const [visible, setVisible] = useState(false);
+  const toggleOverlay = () => {
+    setVisible(!visible);
+  };
+
   useEffect(() => {
     
     fetch(url.api(url.payatm()), {method:'GET'})
@@ -80,7 +87,12 @@ function Payment({ navigation }) {
             <View>
               {
                 atm.map((val, i) => (
-                  <ListItem onPress={() => navigation.navigate('PaymentConfirm')} 
+                  <ListItem 
+                  onPress={() => navigation.navigate('PaymentConfirm', {
+                    packagePlan: packagePlan,
+                    payMethod: val,
+                    dietitian: dietitian
+                  })} 
                   key={i} bottomDivider>
                     <Image style={{width:30, height:30, resizeMode:'contain'}} source={{uri: val.pmphoto}} />
                     <ListItem.Content>
@@ -105,7 +117,12 @@ function Payment({ navigation }) {
             <View>
               {
                 inet.map((val, i) => (
-                  <ListItem onPress={() => navigation.navigate('PaymentConfirm')}
+                  <ListItem 
+                  onPress={() => navigation.navigate('PaymentConfirm', {
+                    packagePlan: packagePlan,
+                    payMethod: val,
+                    dietitian: dietitian
+                  })}
                   key={i} bottomDivider>
                     <Image style={{width:30, height:30, resizeMode:'contain'}} source={{uri: val.pmphoto}} />
                     <ListItem.Content>
@@ -130,7 +147,12 @@ function Payment({ navigation }) {
             <View>
               {
                 emoney.map((val, i) => (
-                  <ListItem onPress={() => navigation.navigate('PaymentConfirm')}
+                  <ListItem 
+                  onPress={() => navigation.navigate('PaymentConfirm', {
+                    packagePlan: packagePlan,
+                    payMethod: val,
+                    dietitian: dietitian
+                  })}
                   key={i} bottomDivider>
                     <Image style={{width:30, height:30, resizeMode:'contain'}} source={{uri: val.pmphoto}} />
                     <ListItem.Content>

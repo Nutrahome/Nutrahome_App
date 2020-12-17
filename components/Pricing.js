@@ -3,8 +3,9 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Icon, Button } from 'react-native-elements'
 import { FlatGrid } from 'react-native-super-grid';
 
-function Pricing({ navigation }) {
+function Pricing({ route, navigation }) {
   
+  const dietitian = route.params
   const [items, setItems] = React.useState([
     { name: 'Counseling-only', pricenew:'200k', priceold:'250k', code: '#da9ff9', facility:['1x initial session', '3x follow-up session', 'No meal box'] },
     { name: 'Pre-contemplation', pricenew:'300k', priceold:'370k', code: '#bedcfa', facility:['1x initial session', '1x follow-up session', '1-week regular meal box'] },
@@ -62,7 +63,10 @@ function Pricing({ navigation }) {
               <Button 
                 buttonStyle={{ marginTop:20, marginBottom:10, backgroundColor:'#ea0505', marginLeft:10, width:320, height:50, borderRadius:20 }}
                 title="Purchase"
-                onPress={() => navigation.navigate('Payment')}
+                onPress={() => navigation.navigate('Payment', {
+                  packagePlan: item,
+                  dietitian: dietitian
+                })}
                 icon={
                   <Icon style={{marginRight:10}} color='white' name='card-outline' type='ionicon' size={24}/>
                 }

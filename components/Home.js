@@ -14,10 +14,10 @@ function HomeScreen({ navigation }) {
           style={{marginTop:15, marginLeft:10, resizeMode:'stretch', width:210, height:54}}/> */}
           <View style={{ marginTop:15, marginLeft:33 }}>
             <Text style={{ fontSize:33, fontFamily:'Comfortaa-Bold' }}>
-              Hi, Lintang!
+              Hi, Andy!
             </Text>
           </View>
-          <View style={{width:90}}/>
+          <View style={{width:150}}/>
           <View style={{marginTop:10}}>
             <Icon raised
             name='notifications' type='ionicon' color='#C0C0C0' size={25}/>
@@ -30,13 +30,13 @@ function HomeScreen({ navigation }) {
         onPress={() => navigation.navigate('UserProfile')}>
           <View style={{marginVertical:10, marginHorizontal:13}}>
             <Avatar
-              rounded size='large' title='LW'
-              source={{uri:'https://lintangwisesa.github.io/me/img/profile.jpg'}}
+              rounded size='large' title='AH'
+              source={{uri:'https://lh3.googleusercontent.com/proxy/ToMSxx9tejmMlSLFZi6wvsUsGGAgkZAoKWNlUxAOUwShtqUTXhouwDxCx3CcLzhRuBa928zJAWJrgEloa-93Ke9JTZ3aNcl8i3OXXsITuWEN_fhR7nhp'}}
             />
           </View>
           <View style={{marginVertical:5, marginHorizontal:3}}>
             <Text style={{ fontSize:20, fontFamily:'Comfortaa-Bold' }}>
-              Lintang Wisesa
+              Andy Heryandi
             </Text>
             <Text style={{ marginBottom:3, fontFamily:'Comfortaa-Bold' }}>
               085890090045
@@ -129,7 +129,7 @@ function HomeScreen({ navigation }) {
             </TouchableOpacity>
             <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>Diary</Text>
           </View>
-          <View style={{alignItems:'center', paddingHorizontal:5}}>
+          {/* <View style={{alignItems:'center', paddingHorizontal:5}}>
             <TouchableOpacity onPress={() => navigation.navigate('Pricing')}>
             <Icon reverse name='cash-outline' type='ionicon' color='#ffd500' size={30}
             iconStyle={{color:'#ea0505'}}/>
@@ -142,7 +142,7 @@ function HomeScreen({ navigation }) {
               iconStyle={{color:'#ea0505'}}/>
             </TouchableOpacity>
             <Text style={{ fontFamily:'Comfortaa-Bold', marginTop:-5 }}>Payment</Text>
-          </View>
+          </View> */}
           <View style={{alignItems:'center', paddingHorizontal:5}}>
             <TouchableOpacity onPress={() => navigation.navigate('Assessment')}>
               <Icon reverse name='body-outline' type='ionicon' color='#ffd500' size={30}

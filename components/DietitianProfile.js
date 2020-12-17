@@ -31,7 +31,7 @@ function UserProfile({ route, navigation }) {
           </View>
         </View>
         
-        {/* user short profile */}
+        {/* dietitian profile */}
         <View style={{width: '85%', height: 95, backgroundColor: '#fff', 
         borderRadius:30, position:'absolute', top:90, flexDirection: 'row' }}>
           <View style={{marginVertical:10, marginHorizontal:13}}>
@@ -100,7 +100,7 @@ function UserProfile({ route, navigation }) {
           <Button 
             buttonStyle={{ marginTop:10, marginBottom:25, backgroundColor:'#ea0505', marginLeft:10, width:320, height:50, borderRadius:20 }}
             title="Consult"
-            onPress={() => navigation.navigate('Pricing')}
+            onPress={() => navigation.navigate('Pricing', item)}
             icon={
               <Icon style={{marginRight:10}} color='white' name='chatbox-ellipses-outline' type='ionicon' size={24}/>
             }

@@ -34,13 +34,13 @@ function UserProfile({ navigation }) {
         borderRadius:30, position:'absolute', top:90, flexDirection: 'row' }}>
           <View style={{marginVertical:10, marginHorizontal:13}}>
             <Avatar
-              rounded size='large' title='LW'
-              source={{uri:'https://lintangwisesa.github.io/me/img/profile.jpg'}}
+              rounded size='large' title='AH'
+              source={{uri:'https://lh3.googleusercontent.com/proxy/ToMSxx9tejmMlSLFZi6wvsUsGGAgkZAoKWNlUxAOUwShtqUTXhouwDxCx3CcLzhRuBa928zJAWJrgEloa-93Ke9JTZ3aNcl8i3OXXsITuWEN_fhR7nhp'}}
             />
           </View>
           <View style={{marginVertical:8, marginHorizontal:3}}>
             <Text style={{ fontSize:23, fontFamily:'Comfortaa-Bold' }}>
-              Lintang Wisesa
+              Andy Heryandi
             </Text>
             <Text style={{ marginBottom:3, fontSize:23, fontFamily:'Comfortaa-Bold' }}>
               085890090045
